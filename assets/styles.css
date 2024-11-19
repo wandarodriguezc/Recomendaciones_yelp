@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #344643;
+    --secondary-color: #344643;
+    --accent-color: #24312f;
+    --background-color: #79b4b7;
+    --text-color: #f8efd9;
+    --background-disabled: #656565;
+    --border: #656565;
+}
+
+/* Posible color 344745  6c938f 465f5d  202c2b  Gris-4c5759   344643   */
+/* Paleta Original f8efd9  79b4b7  344643*/
+
+body {
+    background-color: var(--background-color);
+}
+
+#work_container {
+    width: 98vw;
+    height: 93vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.containers {
+    background-color: var(--primary-color);
+    border: 0.05em solid var(--border);
+    border-radius: 0.5em;
+}
+
+#title_map {
+    margin-top: 1%;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.mini_titles {
+    margin-top: 1%;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+#left_container {
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+
+#left_panel {
+    width: 100%;
+    height: 42%;
+}
+
+#categorias {
+    width: 25%;
+    height: 100%;
+}
+
+#caracteristicas {
+    width: 25%;
+    height: 100%;
+}
+
+#estado_kms {
+    width: 48%;
+    height: 100%;
+}
+
+#panel {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+#right_container {
+    width: 29%;
+    height: 100%;
+}
+
+/* Este de Abajo contine los Drops Distancia y Ciudad Nada mas*/
+#drops {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+
+#container-drop-usuario {
+    margin-top: 6%;
+    width: 95%;
+    height: 20%;
+}
+
+#respuesta {
+    margin-top: 2%;
+    width: 95%;
+    height: 38%;
+    border: 0.05em solid var(--text-color);
+    border-radius: 0.5em;
+}
+
+#botones {
+    margin-top: 7%;
+    justify-content: center;
+    width: 100%;
+    height: 13%;
+}
+
+
+#container-drop1 {
+    justify-content: center;
+    width: 100%;
+}
+
+#container-drop2 {
+    justify-content: center;
+    width: 100%;
+}
+
+.custom-dropdown {
+    width: 90%;
+}
+
+.custom-dropdown .Select-menu-outer {
+    background-color: var(--primary-color);
+    /* Color de fondo */
+}
+
+#drop-usuarios .Select-menu-outer {
+    background-color: var(--primary-color);
+    /* Color de fondo */
+}
+
+
+.custom-dropdown .Select-control {
+    color: var(--text-color);
+    /* Color de la fuente */
+}
+
+#drop-usuarios .Select-control {
+    color: var(--text-color);
+    /* Color de la fuente */
+}
+
+#drop-usuarios .Select-value-label {
+    color: var(--text-color);
+    /* Color del texto de la opción seleccionada */
+}
+
+
+#drop-kilometros .Select-value-label {
+    color: var(--text-color);
+    /* Color del texto de la opción seleccionada */
+}
+
+#drop-ciudades .Select-value-label {
+    color: var(--text-color);
+    /* Color del texto de la opción seleccionada */
+}
+
+
+#btn {
+    width: 40%;
+    height: 100%;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    border: 0.05em solid var(--border);
+    border-radius: 0.5em;
+}
+
+#btn:disabled {
+    background-color: var(--background-disabled);
+    /* Color de fondo para el estado disabled */
+}
+
+
+.ag-theme-alpine-dark {
+    --ag-background-color: transparent;
+    /* Fondo transparente */
+    --ag-odd-row-background-color: transparent;
+    /* Fondo transparente para filas impares */
+    --ag-header-background-color: transparent;
+    /* Fondo transparente para el encabezado */
+    --ag-row-hover-color: transparent;
+    /* Fondo transparente al pasar el ratón */
+    --ag-selected-row-background-color: transparent;
+    /* Fondo transparente para filas seleccionadas */
+    --ag-foreground-color: var(--text-color);
+    /* Color del texto */
+}
+
+.ag-theme-alpine-dark .ag-header {
+    display: none;
+}
+
+.ag-theme-alpine-dark .ag-root-wrapper {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.ag-theme-alpine-dark .ag-cell {
+    font-size: 0.7rem;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+/* Estilo para el checkbox */
+.ag-theme-alpine-dark .ag-checkbox-input-wrapper {
+    background-color: var(--primary-color);
+    /* Color de fondo del checkbox */
+}
+
+.ag-theme-alpine-dark .ag-checkbox-input-wrapper input[type="checkbox"]:checked+.ag-checkbox-input {
+    background-color: var(--background-color);
+    /* Color de fondo cuando está marcado */
+    /* border-color: var(--checkbox-checked-border-color); Color del borde cuando está marcado */
+}

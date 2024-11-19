@@ -1,0 +1,13 @@
+dash
+dash_ag_grid
+joblib
+lightfm
+numpy
+pandas
+plotly
+polars
+pyarrow
+requests
+scikit-learn
+scipy
+gunicorn
