@@ -156,7 +156,7 @@ def retorna_recomendaciones(
     user_id = df_user_ids.filter(mask)['user_id_int'][0]
     top_n = 5
     scores = model.predict(user_id, business_id_list, item_features=item_features,
-                           user_features=user_features, num_threads=5)
+                           user_features=user_features, num_threads=2)
     top_items = np.argsort(-scores)[:top_n]
     recomendations = [business_id_list[i] for i in top_items]
 

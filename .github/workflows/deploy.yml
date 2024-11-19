@@ -30,15 +30,15 @@ jobs:
         with:
           context: .
           push: true
-          tags: huggingface.co/${{secrets.HF_USERNAME}}/recomendaciones_yelp:latest
+          tags: huggingface.co/spaces/studywnrc/recomendaciones_yelp:latest
 
       - name: Log in to Hugging Face
         env:
-          HF_TOKEN: ${{secrets.HF_TOKEN}}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          echo "$HF_TOKEN" | docker login --username ${{secrets.HF_USERNAME}} --password-stdin huggingface.co
+          echo "$HF_TOKEN" | docker login --username ${{ secrets.HF_USERNAME }} --password-stdin huggingface.co
 
       - name: Push Docker image to Hugging Face
         run: |
-          docker tag my-dash-app huggingface.co/${{secrets.HF_USERNAME}}/recomendaciones_yelp:latest
-          docker push huggingface.co/${{secrets.HF_USERNAME}}/recomendaciones_yelp:latest
+          docker tag my-dash-app huggingface.co/spaces/studywnrc/recomendaciones_yelp:latest
+          docker push huggingface.co/spaces/studywnrc/recomendaciones_yelp:latest
