@@ -21,7 +21,7 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y python3-dev libatlas-base-dev
+          sudo apt-get install -y python3-dev libatlas-base-dev gfortran
 
       - name: Install dependencies
         run: |
