@@ -1,7 +1,6 @@
 dash
 dash_ag_grid
 joblib
-lightfm
 numpy
 pandas
 plotly
@@ -11,3 +10,5 @@ requests
 scikit-learn
 scipy
 gunicorn
+Cython
+lightfm
